@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Freelance Marketplace</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Decentralized Freelance Marketplace</h1>
+
+    <!-- Wallet Connection -->
+    <button id="connectWalletButton" onclick="connectWallet()">Connect Wallet</button>
+    <button id="disconnectWalletButton" onclick="disconnectWallet()" style="display:none;">Disconnect Wallet</button>
+    <p id="walletAddress"></p>
+
+    <h2>Hire Freelancer</h2>
+    <input type="number" id="projectId" placeholder="Project ID">
+    <input type="text" id="freelancerAddress" placeholder="Freelancer Address">
+    <button onclick="hireFreelancer()">Hire Freelancer</button>
+
+    <h2>Complete Project</h2>
+    <input type="number" id="completeProjectId" placeholder="Project ID">
+    <button onclick="completeProject()">Mark as Completed</button>
+
+    <h2>Release Payment</h2>
+    <input type="number" id="releasePaymentProjectId" placeholder="Project ID">
+    <button onclick="releasePayment()">Release Payment</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
